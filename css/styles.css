@@ -1,0 +1,149 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    text-align: center;
+}
+/* multiple selectors */
+h1, h2, h3, h4, h5, h6{ 
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+p{
+    color: #8f8f8f;
+}
+.container-fluid{ /* container vs div */
+    padding: 7% 15%;
+}
+/* Sections */
+.colored-section{
+    background-color:#ff4c68;
+    color: white;
+}
+.white-section{
+    background-color:white;
+}
+/*for id tags use the # key*/
+#title{
+text-align: left;
+}
+#title .container-fluid{ /*only applies in the containter within title*/
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
+.title-image{
+    transform: rotate(25deg);
+    Width: 20%;
+    position:absolute;
+    right: 24%;
+}
+/* navigation bar */
+.navbar{
+    padding:0 0 4.5rem;
+    text-align: left;
+    /* when designing site make sure to minimize the number of lines make sure everything is alined with each other */
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+}
+.nav-item{
+    padding:0 18px;
+}
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+  
+}
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+/* features section */
+#features{
+position:relative;
+z-index: 1;
+}
+.feature-box{
+    padding: 5%;
+
+}
+.feature-title{
+    font-size: 1.5rem;
+}
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+/* changes hover state to differnt cover on mouse over */
+.icon:hover{
+color: #ff4c68;
+}
+/* Testimonials */
+#testimonials{
+    background-color: #ef8172;
+}
+.testimonials-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+
+#press{
+padding-bottom: 3%;
+background-color: #ef8172;
+}
+.press-logo{
+width: 15%;
+margin: 20px 20px 50px;
+
+}
+.price-text{
+    line-height: 1.5;
+    font-size: 3rem;
+}
+#pricing{
+padding: 100px;
+}
+.pricing-column{
+    padding: 3% 2%;
+}
+
+#cta{
+    padding: 7% 15%;
+}
+.footer{
+    background-color: white;
+
+}
+/* headings */
+.big-heading{
+    line-height: 1.5;
+    font-size: 3.5rem;
+}
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.copyright{
+    margin: 3% auto;
+    font-size: 1rem;
+}
+.social-icon{
+    margin: 20px 10px;
+}
+
+@media (max-width: 991px) { 
+    /* @medi tag set a css element based if it is below the maximum width */
+    .title-image{
+        transform: rotate(0deg);
+        Width: 60%;
+        position:static;
+
+    }
+    #title{
+        text-align: center;
+    }
+}
